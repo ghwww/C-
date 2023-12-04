@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33027.164
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "C语言练习", "C语言练习.c\C语言练习.c.vcxproj", "{398F17C3-B8B8-4170-BBD0-FC21ED2D3E45}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{398F17C3-B8B8-4170-BBD0-FC21ED2D3E45}.Debug|ARM.ActiveCfg = Debug|ARM
+		{398F17C3-B8B8-4170-BBD0-FC21ED2D3E45}.Debug|ARM.Build.0 = Debug|ARM
+		{398F17C3-B8B8-4170-BBD0-FC21ED2D3E45}.Debug|x64.ActiveCfg = Debug|x64
+		{398F17C3-B8B8-4170-BBD0-FC21ED2D3E45}.Debug|x64.Build.0 = Debug|x64
+		{398F17C3-B8B8-4170-BBD0-FC21ED2D3E45}.Debug|x86.ActiveCfg = Debug|Win32
+		{398F17C3-B8B8-4170-BBD0-FC21ED2D3E45}.Debug|x86.Build.0 = Debug|Win32
+		{398F17C3-B8B8-4170-BBD0-FC21ED2D3E45}.Release|ARM.ActiveCfg = Release|ARM
+		{398F17C3-B8B8-4170-BBD0-FC21ED2D3E45}.Release|ARM.Build.0 = Release|ARM
+		{398F17C3-B8B8-4170-BBD0-FC21ED2D3E45}.Release|x64.ActiveCfg = Release|x64
+		{398F17C3-B8B8-4170-BBD0-FC21ED2D3E45}.Release|x64.Build.0 = Release|x64
+		{398F17C3-B8B8-4170-BBD0-FC21ED2D3E45}.Release|x86.ActiveCfg = Release|Win32
+		{398F17C3-B8B8-4170-BBD0-FC21ED2D3E45}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7B68646F-F3B7-491B-B29F-EE962DBBD2E9}
+	EndGlobalSection
+EndGlobal
