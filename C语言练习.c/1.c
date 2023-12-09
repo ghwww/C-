@@ -805,16 +805,210 @@
 
 
 
+//int main()
+//{
+//	for (int j = 1; j < 10; j++)
+//	{
+//		printf("\n");
+//		for (int i = 1; i <= j; i++)
+//		{
+//			printf("%d*%d=%-2d  ", i, j, j * i);
+//		}
+//	}
+//	return 0;
+//}
+
+
+//void printf_digit(int x)//递归实现各个位数
+//{
+//	if (x / 10 > 0)
+//	{
+//		printf_digit(x / 10);
+//	}
+//		printf("%-2d\n", x%10);
+//}
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d", &n);
+//	printf_digit(n);
+//	return 0;
+//}
+
+
+//int my_strlen(char Arr[])//递归实现strlen函数
+//{
+//	int i = 0;
+//	if (Arr[i] != '\0')
+//	{
+//		return (1 + my_strlen(&Arr[i + 1]));
+//	}
+//	else
+//		return 0;
+//}
+//int main()
+//{
+//	char arr[] = "udafs.][[f][s;";
+//	int n = my_strlen(&arr[0]);
+//	printf("%d", n);
+//	return 0;
+//}
+
+
+
+
+//int Factorial_recursion(int x)//递归阶乘
+//{
+//	int i = 1;
+//	if (x > 1)
+//	{
+//		return (x * Factorial_recursion(x - 1));
+//	}
+//	return 1;
+//}
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d", &n);
+//	int fac_r = Factorial_recursion(n);
+//	printf("%d", fac_r);
+//	return 0;
+//}
+
+
+
+//void Reverse_Array(char *Arr, int x)
+//{
+//    //倒序存放字符数组
+//    /*char* pt1 = Arr;
+//    char* pt2 = Arr + x - 1;*/
+//    int l = 0, r = x - 1;//左右下标
+//    while (l < r)
+//    {
+//        char temp = *(Arr + l);
+//        *(Arr + l) = *(Arr + r);
+//        *(Arr + r) = temp;
+//        l++; r--;
+//    }
+//}
+//int main()
+//{
+//    char arr[] = "abcdef";
+//    int n = sizeof(arr) / sizeof(arr[0]) - 1;//数组arr元素个数
+//    Reverse_Array(arr, n);
+//    printf("%s", arr);
+//    return 0;
+//}
+
+
+
+
+
+//倒序-字符-递归——char* pt1本次交换的首元素-char* pt2本次交换的尾元素
+//#include<string.h>
+//int my_strlen(char* Arr)
+//{
+//    int n = 0;
+//    while (Arr[n] != '\0')//*(Arr+n)!='\n'同效
+//    {
+//        n++;
+//    }
+//    return n;
+//}
+//void Reverse_Array_Recursion(char* Arr)
+//{
+//    //倒序存放字符数组
+//    int n = my_strlen(Arr)-1;
+//    char temp = *Arr;
+//    *Arr = *(Arr + n);
+//    *(Arr + n ) = '\0';//字符数组有效个数减少一个
+//    if (my_strlen(Arr) >= 2)//判断字符数组有效个数
+//    {
+//        Reverse_Array_Recursion(Arr + 1);//字符数组有效个数减少一个
+//    }
+//    *(Arr + n) = temp;
+//}
+//int main()
+//{
+//    char arr[] = "abcdef";
+//    //printf("%d\n", my_strlen(arr));
+//    Reverse_Array_Recursion(arr);
+//    printf("%s", arr);
+//    return 0;
+//}
+
+
+//计算一个非负整数各个位数的和
+//int DigitSum(int x)
+//{
+//	if (x > 9)
+//	{
+//		return (x%10 + DigitSum(x / 10));
+//	}
+//	else
+//	{
+//		return x;
+//	}
+//}
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d", &n);//输入非负数
+//	int i = DigitSum(n);
+//	printf("%d", i);
+//	return 0;
+//}
+
+
+
+////绝对值函数
+//double my_fabs(double x)
+//{
+//	if (x < 0)
+//	{
+//		return (0 - x);
+//	}
+//	return x;
+//}
+////幂函数，求出x的y次方
+//double my_pow(double x,double y)
+//{
+//	if (y > 0)
+//	{
+//		return (x * my_pow(x, y - 1));
+//	}
+//	else if (y == 0)
+//	{
+//		return 1;
+//	}
+//	else//y为负数
+//	{
+//		return (1.0 / x) * my_pow(x, y + 1);
+//	}
+//}
+//int main()
+//{
+//	double n = 0, k = 0;
+//	scanf("%lf %lf", &n, &k);
+//	printf("%lf",my_pow(n,k));
+//	return 0;
+//}
+
+
+int Fibonacci_math(int x)
+{
+	if (x > 2)
+	{
+		return (Fibonacci_math(x - 2) + Fibonacci_math(x - 1));
+	}
+	else
+		return 1;
+}
 int main()
 {
-	for (int j = 1; j < 10; j++)
-	{
-		printf("\n");
-		for (int i = 1; i <= j; i++)
-		{
-			printf("%d*%d=%-2d  ", i, j, j * i);
-		}
-	}
+	int n = 0;
+	scanf("%d", &n);
+	printf("%d", Fibonacci_math(n));
 	return 0;
 }
 //ctrl+fn+f5运行
