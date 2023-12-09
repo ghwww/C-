@@ -819,7 +819,7 @@
 //}
 
 
-//void printf_digit(int x)//µİ¹éÊµÏÖ¸÷¸öÎ»Êı
+//void printf_digit(int x)//é€’å½’å®ç°å„ä¸ªä½æ•°
 //{
 //	if (x / 10 > 0)
 //	{
@@ -836,7 +836,7 @@
 //}
 
 
-//int my_strlen(char Arr[])//µİ¹éÊµÏÖstrlenº¯Êı
+//int my_strlen(char Arr[])//é€’å½’å®ç°strlenå‡½æ•°
 //{
 //	int i = 0;
 //	if (Arr[i] != '\0')
@@ -857,7 +857,7 @@
 
 
 
-//int Factorial_recursion(int x)//µİ¹é½×³Ë
+//int Factorial_recursion(int x)//é€’å½’é˜¶ä¹˜
 //{
 //	int i = 1;
 //	if (x > 1)
@@ -879,10 +879,10 @@
 
 //void Reverse_Array(char *Arr, int x)
 //{
-//    //µ¹Ğò´æ·Å×Ö·ûÊı×é
+//    //å€’åºå­˜æ”¾å­—ç¬¦æ•°ç»„
 //    /*char* pt1 = Arr;
 //    char* pt2 = Arr + x - 1;*/
-//    int l = 0, r = x - 1;//×óÓÒÏÂ±ê
+//    int l = 0, r = x - 1;//å·¦å³ä¸‹æ ‡
 //    while (l < r)
 //    {
 //        char temp = *(Arr + l);
@@ -894,7 +894,7 @@
 //int main()
 //{
 //    char arr[] = "abcdef";
-//    int n = sizeof(arr) / sizeof(arr[0]) - 1;//Êı×éarrÔªËØ¸öÊı
+//    int n = sizeof(arr) / sizeof(arr[0]) - 1;//æ•°ç»„arrå…ƒç´ ä¸ªæ•°
 //    Reverse_Array(arr, n);
 //    printf("%s", arr);
 //    return 0;
@@ -904,12 +904,12 @@
 
 
 
-//µ¹Ğò-×Ö·û-µİ¹é¡ª¡ªchar* pt1±¾´Î½»»»µÄÊ×ÔªËØ-char* pt2±¾´Î½»»»µÄÎ²ÔªËØ
+//å€’åº-å­—ç¬¦-é€’å½’â€”â€”char* pt1æœ¬æ¬¡äº¤æ¢çš„é¦–å…ƒç´ -char* pt2æœ¬æ¬¡äº¤æ¢çš„å°¾å…ƒç´ 
 //#include<string.h>
 //int my_strlen(char* Arr)
 //{
 //    int n = 0;
-//    while (Arr[n] != '\0')//*(Arr+n)!='\n'Í¬Ğ§
+//    while (Arr[n] != '\0')//*(Arr+n)!='\n'åŒæ•ˆ
 //    {
 //        n++;
 //    }
@@ -917,14 +917,14 @@
 //}
 //void Reverse_Array_Recursion(char* Arr)
 //{
-//    //µ¹Ğò´æ·Å×Ö·ûÊı×é
+//    //å€’åºå­˜æ”¾å­—ç¬¦æ•°ç»„
 //    int n = my_strlen(Arr)-1;
 //    char temp = *Arr;
 //    *Arr = *(Arr + n);
-//    *(Arr + n ) = '\0';//×Ö·ûÊı×éÓĞĞ§¸öÊı¼õÉÙÒ»¸ö
-//    if (my_strlen(Arr) >= 2)//ÅĞ¶Ï×Ö·ûÊı×éÓĞĞ§¸öÊı
+//    *(Arr + n ) = '\0';//å­—ç¬¦æ•°ç»„æœ‰æ•ˆä¸ªæ•°å‡å°‘ä¸€ä¸ª
+//    if (my_strlen(Arr) >= 2)//åˆ¤æ–­å­—ç¬¦æ•°ç»„æœ‰æ•ˆä¸ªæ•°
 //    {
-//        Reverse_Array_Recursion(Arr + 1);//×Ö·ûÊı×éÓĞĞ§¸öÊı¼õÉÙÒ»¸ö
+//        Reverse_Array_Recursion(Arr + 1);//å­—ç¬¦æ•°ç»„æœ‰æ•ˆä¸ªæ•°å‡å°‘ä¸€ä¸ª
 //    }
 //    *(Arr + n) = temp;
 //}
@@ -938,7 +938,7 @@
 //}
 
 
-//¼ÆËãÒ»¸ö·Ç¸ºÕûÊı¸÷¸öÎ»ÊıµÄºÍ
+//è®¡ç®—ä¸€ä¸ªéè´Ÿæ•´æ•°å„ä¸ªä½æ•°çš„å’Œ
 //int DigitSum(int x)
 //{
 //	if (x > 9)
@@ -953,7 +953,7 @@
 //int main()
 //{
 //	int n = 0;
-//	scanf("%d", &n);//ÊäÈë·Ç¸ºÊı
+//	scanf("%d", &n);//è¾“å…¥éè´Ÿæ•°
 //	int i = DigitSum(n);
 //	printf("%d", i);
 //	return 0;
@@ -961,7 +961,7 @@
 
 
 
-////¾ø¶ÔÖµº¯Êı
+////ç»å¯¹å€¼å‡½æ•°
 //double my_fabs(double x)
 //{
 //	if (x < 0)
@@ -970,7 +970,7 @@
 //	}
 //	return x;
 //}
-////Ãİº¯Êı£¬Çó³öxµÄy´Î·½
+////å¹‚å‡½æ•°ï¼Œæ±‚å‡ºxçš„yæ¬¡æ–¹
 //double my_pow(double x,double y)
 //{
 //	if (y > 0)
@@ -981,7 +981,7 @@
 //	{
 //		return 1;
 //	}
-//	else//yÎª¸ºÊı
+//	else//yä¸ºè´Ÿæ•°
 //	{
 //		return (1.0 / x) * my_pow(x, y + 1);
 //	}
