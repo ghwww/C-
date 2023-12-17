@@ -995,20 +995,190 @@
 //}
 
 
-int Fibonacci_math(int x)
+//int Fibonacci_math(int x)
+//{
+//	if (x > 2)
+//	{
+//		return (Fibonacci_math(x - 2) + Fibonacci_math(x - 1));
+//	}
+//	else
+//		return 1;
+//}
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d", &n);
+//	printf("%d", Fibonacci_math(n));
+//	return 0;
+//}
+
+
+
+
+//void bubble_sort(int* Arr)
+//{
+//	for (int i = 0; i < 9; i++)
+//	{
+//		for (int j = 0; j < 9-i; j++)
+//		{
+//			if (*(Arr + j) > *(Arr + j + 1))
+//			{
+//				int temp = *(Arr + j);
+//				*(Arr + j) = *(Arr + j + 1);
+//				*(Arr + j + 1) = temp;
+//			}
+//		}
+//	}
+//}
+//int main()
+//{
+//	int arr[] = { 9,8,7,6,5,4,3,2,1,0 };
+//	bubble_sort(arr);
+//	for (int i = 0; i < 10; i++)
+//	{
+//		printf("%2d", arr[i]);
+//	}
+//	return 0;
+//}
+
+
+//int yn(int x)
+//{
+//	if (x > 9)
+//	{
+//		return ((x % 10) * (x % 10) * (x % 10) + yn(x / 10));
+//	}
+//	else
+//		return (x * x * x);
+//}
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d", &n);
+//	printf("%d", yn(n));
+//	return 0;
+//}
+
+
+//求前n项斐波那契数的和
+//int yn(int x)
+//{
+//		int sum = 0;
+//		int Fib1 = 0, Fib2 = 1, Fib3 = 0, tmp = 0;//0 1 1/1 0 1/1 1 2/2 1 3/
+//		for (int i = 1; i <= x; i++)//第几个斐波那契数
+//		{
+//			Fib3 = Fib1 + Fib2;
+//			printf("%3d", sum);
+//			sum = sum + Fib3;
+//			printf("+%-3d=%d\n", Fib3, sum);
+//			tmp = Fib3;
+//			Fib3 = Fib2;
+//			Fib2 = Fib1;
+//			Fib1 = tmp;
+//		}
+//	return sum;
+//}
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d", &n);
+//	printf("%d", yn(n));
+//	return 0;
+//}
+
+
+
+
+//指针数组倒序
+//void yn(int* Arr)
+//{
+//	for (int j = 0; j < 9; j++)
+//	{
+//		for (int i = 0; i < 9-j; i++)
+//		{
+//			if (*(Arr+i) > *(Arr +i+1))
+//			{
+//				int tmp = *(Arr + i);
+//				*(Arr + i) = *(Arr + i+1);
+//				*(Arr + i+1) = tmp;
+//			}
+//		}
+//	}
+//}
+//
+//int main()
+//{
+//	int arr[10] = { 9,8,7,6,5,4,3,2,1,0 };
+//	yn(arr);
+//	for (int i= 0; i < 10; i++)
+//	{
+//		printf("%d ",arr[i]);
+//	}
+//	return 0;
+//}
+
+
+//double fun(int n)
+//{
+//	double sum = 0;
+//	double fun = 0;
+//	for (int i = 1; i <= n; i++)
+//	{ 
+//		sum = sum + i;
+//		fun = fun + (1.0 / sum);
+//	}
+//	return fun;
+//}
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d", &n);
+//	printf("%lf",fun(n));
+//	return 0;
+//}
+
+
+
+//double fun(int a[], int n)
+//{
+//	int sum = 0;
+//	for (int i = 0; i < n; i++)
+//	{
+//		//将数组传进函数后使用指针的方式累加
+//		//sum = sum + *(a + i);
+//		sum = sum + a[i];
+//	}
+//	return sum*1.0 / n;
+//}
+//int main()
+//{
+//	int a[5];
+//	int n = 5;
+//	for (int i = 0; i < n; i++)
+//	{
+//		scanf("%d", &a[i]);
+//	}
+//	printf("%lf",fun(a, n));
+//	return 0;
+//}
+
+
+
+double fun(int n)
 {
-	if (x > 2)
+	int i = 1;
+	double sum = 0;
+	for (i = 1; i <= n; i++)
 	{
-		return (Fibonacci_math(x - 2) + Fibonacci_math(x - 1));
+		sum = sum + ((2 * i - 1) * (2 * i + 1)*1.0 / (2 * i));
 	}
-	else
-		return 1;
+	return sum;
 }
 int main()
 {
 	int n = 0;
 	scanf("%d", &n);
-	printf("%d", Fibonacci_math(n));
+	printf("%lf", fun(n));
 	return 0;
 }
 //ctrl+fn+f5运行
